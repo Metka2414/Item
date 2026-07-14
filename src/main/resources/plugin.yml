@@ -1,0 +1,26 @@
+name: ItemEnchantPlugin
+version: '1.0.0'
+main: de.itemenchant.plugin.ItemEnchantPlugin
+api-version: 1.21
+author: itemenchant
+softdepend: [Vault]
+
+commands:
+  itemgui:
+    description: Öffnet das Verzauberungs-GUI für das Item in der Hand
+    usage: /itemgui [uses <anzahl|infinite>]
+  moneyvoucher:
+    description: Erstellt einen Geld-Gutschein (Gold-Barren)
+    usage: /moneyvoucher <betrag> [anzahl]
+    aliases: [mvoucher]
+  bindcrate:
+    description: Bindet eine Crate an das Item in der Hand
+    usage: /bindcrate <cratename>
+  signitem:
+    description: Signiert das Item in der Hand
+    usage: /signitem [name]
+
+permissions:
+  itemenchant.admin:
+    description: Vollzugriff auf alle Item-Enchant-Befehle
+    default: op
